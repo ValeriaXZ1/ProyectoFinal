@@ -7,19 +7,19 @@ document.addEventListener("Contenedor", () => {
         src: "/src/assets/Imagenes/heladeria.jpg",
         alt: "Lugar 1",
         title: "Heladeria",
-        description: "Una playa tranquila y escondida ideal para relajarse."
+        description: "Una playa tranquila y escondida ideal para relajarse con un helado."
       },
       {
         src: "/src/assets/Imagenes/distribuidor.jpeg",
         alt: "Lugar 2",
         title: "distribuidor de casero",
-        description: "Un lugar perfecto para los amantes del senderismo."
+        description: "Aqui encuetras sabores exquisitos."
       },
       {
         src: "/src/assets/Imagenes/casaHelados.jpeg",
         alt: "Lugar 3",
         title: "Casa de helados Pinguino",
-        description: "Una espectacular cascada rodeada de naturaleza."
+        description: "Un lugar perfecto para compartir en familia"
       }
     ];
   
@@ -28,9 +28,9 @@ document.addEventListener("Contenedor", () => {
       col.className = "col-md-4 mb-4"; 
       col.innerHTML = `
         <div class="card">
-          <img src="${lugar.src}" class="card-img-top" alt="${lugar.alt}">
+          <img src="${lugares.src}" class="card-img-top" alt="${lugar.alt}">
           <div class="card-body">
-            <h5 class="card-title">${lugar.title}</h5>
+            <h5 class="card-title">${lugares.title}</h5>
             <p class="card-text">${lugar.description}</p>
             <a href="#" class="btn btn-primary">Ver más</a>
           </div>
