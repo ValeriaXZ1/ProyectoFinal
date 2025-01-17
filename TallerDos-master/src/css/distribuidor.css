@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: url('https://i.ytimg.com/vi/7qCpMXYvu5A/sddefault.jpg') no-repeat center center fixed;
+    background-size: cover;
+    animation: moverFondo 10s linear infinite;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+}
+
+@keyframes moverFondo {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+h2 {
+    position: absolute;
+    top: 10%;
+    color: #333;
+    text-align: center;
+}
+
+iframe {
+    border: 10px solid #ddd;
+    border-radius: 20px;
+
+}
+
+iframe:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    
+}
+.Titulos {
+    text-align: center;
+    color: #FF6347;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    margin-top: 50px;
+    letter-spacing: 1.5px;
+}
+#flecha-unica {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#flecha-unica:hover {
+    background-color: white;
+    transform: translateY(-50%) scale(1.1);
+}
+
+#flecha-unica img {
+    width: 60%;
+    height: 60%;
+}

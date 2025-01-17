@@ -1,0 +1,135 @@
+/* Estilos generales */
+body {
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background:url(https://wallpapers.com/images/featured/fondods-de-pinguinos-bebe-ne0bt9kqsdrxo8h9.jpg);
+  background-size: cover;
+}
+
+/* Estilo para el contenedor del carrito */
+h1 {
+    text-align: center;
+    color: red;
+    background-color: white;
+    margin-top: 20px;
+}
+
+/* Contenedor de productos */
+#productos-carrito {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de cada producto en el carrito */
+.producto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.producto p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.producto button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.producto button:hover {
+    background-color: #c82333;
+}
+
+/* Estilos para los botones de vaciar carrito y realizar compra */
+button {
+    background-image: linear-gradient(45deg, #CF0A0A, #EDEDED, #003366); /* Gradiente con tres colores */
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 20px;
+    margin: 15px 0;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-image: linear-gradient(45deg, #0056b3, #00aaff, #003366); /* Gradiente con tres colores */
+}
+
+
+/* Estilo para el botón de vaciar carrito */
+button#vaciar {
+    background-color: #ffc107;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+button#vaciar:hover {
+    background-color: #e0a800;
+    border-radius: 20px;
+}
+
+/* Estilos de los botones en línea */
+div.buttons-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+/* Footer (si es necesario) */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/*boton salir*/
+#salirBtn {
+    color: black;
+    border: none;
+    padding: 5px 10px; 
+    font-size: 20px; 
+    cursor: pointer;
+    border-radius: 30px;
+    margin-top: 30px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    width: 120px; 
+}
+
+#salirBtn:hover {
+    background-color: #c82333; /* Rojo oscuro en hover */
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../output.css" rel="stylesheet">
+    <link rel="stylesheet" href="/TallerDos-master/src/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Rubik+Vinyl&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Home</title>
+
+</head>
+<body>
+  <!-- navegacion-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <a class="Logo">
+      <img src="/TallerDos-master/src/assets/Imagenes/Logo.png" alt="Logo Pinguino" width="100" height="100" class="d-inline-block align-text-top">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav me-auto">
+        <!-- Nosotros -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Nosotros.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Nosotros
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="Index.html">Inicio</a></li>
+            <li><a class="dropdown-item" href="mision.html">Misión</a></li>
+            <li><a class="dropdown-item" href="vision.html">Visión</a></li>
+          </ul>
+        </li>
+        <!-- Nuestra Marca -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Nuestra Marca
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="Magnum.html">MAGNUM</a></li>
+            <li><a class="dropdown-item" href="cornetto.html">CORNETTO</a></li>
+            <li><a class="dropdown-item" href="Casero.html">CASERO</a></li>
+          </ul>
+        </li>
+        <!-- Helados -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Nuestra Historia
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="Mi Historia.html">HISTORIA PINGUINOS</a></li>
+          </ul>
+        </li>
+        <!-- Inspírame -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Inspírame
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="preguntas.html">PREGUNTAS FRECUENTES</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!-- Sección de Búsqueda -->
+      <form class="d-flex me-3" role="search">
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+      <!-- Botón de Registro -->
+      <a href="registro.html" class="btn btn-danger">Regístrate</a>
+    </div>
+  </nav>  
+  <!-- tailwind-->
+   <hr>
+   <br>
+   <br>
+  <section class="relative bg-blue-50">
+<div id="iceCreamCarousel" class="carousel slide relative w-full h-screen" data-bs-ride="carousel">
+  <div class="carousel-inner h-full">
+    <div class="carousel-item active h-full">
+      <div class="flex justify-center items-center">
+        <img src="/TallerDos-master/src/assets/Imagenes/carrucel 1.jpg" class="flex-grow max-w-[80%] object-cover" alt="Helado de Chocolate">
+        <div class="absolute inset-0 bg-black opacity-50"></div> 
+      </div>
+                 
+    </div>
+    <div class="carousel-item h-full">
+      <img src="/TallerDos-master/src/assets/Imagenes/carrucel 2.jpeg" class="w-[300vw] h-auto mx-auto object-cover" alt="Helado de Chocolate">
+      <div class="absolute inset-0 bg-black opacity-50"></div> 
+    </div>
+    <div class="carousel-item h-full">
+      <img src="/TallerDos-master/src/assets/Imagenes/carrucel 3.jpg" class="w-[300vw] h-auto mx-auto object-cover" alt="Helado de Chocolate">
+      <div class="absolute inset-0 bg-black opacity-50"></div> 
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#iceCreamCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#iceCreamCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Siguiente</span>
+  </button>
+</div>
+
+  
+    <!-- Texto superpuesto -->
+    <div class="absolute inset-0 flex flex-col justify-center items-center text-center text-white px-4 bg-black/50">
+      <h2 class="text-5xl md:text-7xl font-bold mb-8 text-white md:text-pink-700">
+        ¡El helado de tus sueños!
+      </h2>
+    </div>
+  </section>
+  
+<br>
+<hr>
+<section id="flavors" class="bg-white py-16">
+  <div class="container mx-auto px-4">
+    <h3 class="text-3xl font-bold text-center mb-8">Sabores Populares</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Flavor Card -->
+      <div class="bg-blue-50 rounded-lg shadow-lg p-6 text-center">
+        <img src="/TallerDos-master/src/assets/Imagenes/Chocolate Clasico.webp" alt="Chocolate" class="mx-auto mb-4 rounded-full w-24 h-24">
+        <h4 class="text-xl font-bold text-gray-800">Chocolate Clásico</h4>
+        <p class="text-gray-600">Un favorito eterno con el mejor cacao.</p>
+      </div>
+      <div class="bg-blue-50 rounded-lg shadow-lg p-6 text-center">
+        <img src="/TallerDos-master/src/assets/Imagenes/fresa.jpg" alt="Fresa" class="mx-auto mb-4 rounded-full">
+        <h4 class="text-xl font-bold text-gray-800">Fresa Deliciosa</h4>
+        <p class="text-gray-600">Fresas frescas en cada bocado.</p>
+      </div>
+      <div class="bg-blue-50 rounded-lg shadow-lg p-6 text-center">
+        <img src="/TallerDos-master/src/assets/Imagenes/menta.webp" alt="Menta" class="mx-auto mb-4 rounded-full w-24 h-24">
+        <h4 class="text-xl font-bold text-gray-800">Menta Mágica</h4>
+        <p class="text-gray-600">Refrescante y cremoso a la vez.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<br>
+<hr>  
+<footer>
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>Ayuda</h3>
+      <a href="Lugares.html">Ubicaciones</a>
+      <a href="Contactos.html">Contáctanos</a>
+    </div>
+    <div class="footer-column">
+      <h3>Síguenos!</h3>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/pinguinoecuador" title="Facebook">F</a>
+        <a href="https://www.youtube.com/@compartefelicidad" title="YouTube">Y</a>
+        <a href="https://www.instagram.com/pinguino_ec/" title="Instagram">I</a>
+      </div>
+    </div>
+    <div class="footer-column">
+      <h3>Ubicación</h3>
+      <p>Ecuador | <a href="#" style="color: white; text-decoration: underline;">Cambia de ubicación</a></p>
+    </div>
+  </div>
+  <div class="footer-logo">
+    <img src="/TallerDos-master/src/assets/Imagenes/unilever.avif" alt="Unilever Logo">© 2025 Unilever
+  </div>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="/TallerDos-master/src/js/javascript.js"></script>
+</body>
+</html>

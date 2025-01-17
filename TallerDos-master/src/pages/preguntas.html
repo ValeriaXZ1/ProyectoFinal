@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/TallerDos-master/src/css/preguntas.css">
+    <title>Helados Pinguinos</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <a class="Logo">
+            <img src="/TallerDos-master/src/assets/Imagenes/Logo.png" alt="Logo Pinguino" width="100" height="100"
+                class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav me-auto">
+                <!-- Nosotros -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="Nosotros.html" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Nosotros
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="Index.html">Inicio</a></li>
+                        <li><a class="dropdown-item" href="mision.html">Misión</a></li>
+                        <li><a class="dropdown-item" href="vision.html">Visión</a></li>
+                        <li><a class="dropdown-item" href="equipo.html">Equipo</a></li>
+                    </ul>
+                </li>
+                <!-- Nuestra Marca -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Nuestra Marca
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Marca 1</a></li>
+                        <li><a class="dropdown-item" href="#">Marca 2</a></li>
+                        <li><a class="dropdown-item" href="#">Marca 3</a></li>
+                    </ul>
+                </li>
+                <!-- Helados -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Helados
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Helado 1</a></li>
+                        <li><a class="dropdown-item" href="#">Helado 2</a></li>
+                        <li><a class="dropdown-item" href="#">Helado 3</a></li>
+                    </ul>
+                </li>
+                <!-- Inspírame -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Inspírame
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Idea 1</a></li>
+                        <li><a class="dropdown-item" href="#">Idea 2</a></li>
+                        <li><a class="dropdown-item" href="#">Idea 3</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Sección de Búsqueda -->
+            <form class="d-flex me-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+            <!-- Botón de Registro -->
+            <a href="registro.html" class="btn btn-danger">Regístrate</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>Preguntas Frecuentes sobre nuestros Helados</h2>
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(0)">¿Cómo se elaboran los helados Pinguinos?</button>
+            <div class="faq-answer" id="answer-0">
+                <p>Nuestros helados se hacen con ingredientes de alta calidad, utilizando técnicas artesanales para
+                    garantizar el mejor sabor.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(1)">¿Son los helados Pinguinos aptos para personas con
+                intolerancia a la lactosa?</button>
+            <div class="faq-answer" id="answer-1">
+                <p>Ofrecemos opciones sin lactosa, por lo que si tienes intolerancia, puedes disfrutar de nuestros
+                    productos sin problemas.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(2)">¿Puedo comprar helados Pinguinos online?</button>
+            <div class="faq-answer" id="answer-2">
+                <p>Sí, puedes hacer pedidos online a través de nuestra página web y recibirlos directamente en tu
+                    domicilio.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(3)">¿Qué sabores tienen los helados Pinguinos?</button>
+            <div class="faq-answer" id="answer-3">
+                <p>Ofrecemos una variedad de sabores, como vainilla, chocolate, fresa, y algunas ediciones especiales
+                    como menta y dulce de leche.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(4)">¿Los helados Pinguinos contienen colorantes
+                artificiales?</button>
+            <div class="faq-answer" id="answer-4">
+                <p>No utilizamos colorantes artificiales en nuestros helados. Todo el color proviene de los ingredientes
+                    naturales.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(5)">¿Puedo elegir el tamaño de los helados
+                Pinguinos?</button>
+            <div class="faq-answer" id="answer-5">
+                <p>Sí, ofrecemos diferentes tamaños para que puedas elegir el que más te guste, desde individuales hasta
+                    familiares.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(6)">¿Puedo personalizar mi helado Pinguino con
+                toppings?</button>
+            <div class="faq-answer" id="answer-6">
+                <p>¡Claro! Puedes personalizar tu helado con una variedad de toppings como chispas de chocolate, frutas,
+                    y más.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(7)">¿Los helados Pinguinos son aptos para
+                veganos?</button>
+            <div class="faq-answer" id="answer-7">
+                <p>Tenemos opciones veganas disponibles, elaboradas sin productos de origen animal.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(8)">¿Cuánto tiempo duran los helados Pinguinos en el
+                congelador?</button>
+            <div class="faq-answer" id="answer-8">
+                <p>Si se almacenan correctamente en el congelador, los helados Pinguinos pueden durar hasta 6 meses sin
+                    perder su sabor y textura.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(9)">¿Puedo regalar un helado Pinguino?</button>
+            <div class="faq-answer" id="answer-9">
+                <p>¡Por supuesto! Puedes comprar nuestros helados como un regalo para tus seres queridos, ya sea en caja
+                    o en formatos especiales.</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <h1>Galeria de helados</h1>
+    <div class="gallery">
+        <div class="image-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY53U5vrRIDE5Bshm8K1sIceh4G2yotVCZIA&s" alt="Helado 1" class="gallery-img" onclick="openModal(this)">
+        </div>
+        <div class="image-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXauqop_uC8Xqq0B8Ai4UddMuO9HZQOW8BKuX9J2tH1W3pIAmK0laNmrCzXRh8Agn4ZiI&usqp=CAU" alt="Helado 2" class="gallery-img" onclick="openModal(this)">
+        </div>
+        <div class="image-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNOX1oGdJbKclCPYYfHTwiU0V3WLEp2aEiwQ&s  " alt="Helado 3" class="gallery-img" onclick="openModal(this)">
+        </div>
+        <div class="image-item">
+            <img src="https://i.ytimg.com/vi/Jk69WZTGlAY/maxresdefault.jpg" alt="Helado 4" class="gallery-img" onclick="openModal(this)">
+        </div>
+        <div class="image-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpW5xWmleF20wDw_2hS_x8z1bxeeWqAkVc1AlQ4qU9TWeGFpkPmDpFAWATfRsEuXOwEG0&usqp=CAU" alt="Helado 5" class="gallery-img" onclick="openModal(this)">
+        </div>
+    </div>
+    </div>
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">×</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+    <br>
+    <br>
+
+    <footer>
+        <div class="footer-container">
+          <div class="footer-column">
+            <h3>Ayuda</h3>
+            <a href="Lugares.html">Ubicaciones</a>
+            <a href="Contactos.html">Contáctanos</a>
+          </div>
+          <div class="footer-column">
+            <h3>Síguenos!</h3>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/pinguinoecuador" title="Facebook">F</a>
+              <a href="https://www.youtube.com/@compartefelicidad" title="YouTube">Y</a>
+              <a href="https://www.instagram.com/pinguino_ec/" title="Instagram">I</a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h3>Ubicación</h3>
+            <p>Ecuador | <a href="#" style="color: white; text-decoration: underline;">Cambia de ubicación</a></p>
+          </div>
+        </div>
+  <div class="footer-logo">
+    <img src="/TallerDos-master/src/assets/Imagenes/unilever.avif" alt="Unilever Logo">© 2025 Unilever
+  </div>
+</footer>
+
+    <script src="/TallerDos-master/src/js/preguntas.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

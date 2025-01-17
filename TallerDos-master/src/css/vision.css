@@ -1,0 +1,266 @@
+body{
+    background:url(https://st2.depositphotos.com/1813957/6716/i/450/depositphotos_67168205-stock-illustration-beautiful-colorful-pastel-background-texture.jpg);
+    background-size: cover;
+  }
+/* Efectos en el video */
+.video {
+    transition: transform 0.3s ease;
+  }
+  .gif-Pinguino:hover .video {
+    transform: scale(1.05);
+  }
+  
+  /* Estilos para los testimonios */
+  .testimonial img {
+    border: 3px solid #ff4081;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  .testimonial:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+  }
+  
+  /* Estilos para las imágenes de la galería */
+  /* Contenedor de la galería en fila horizontal */
+.galeria .flex {
+    display: flex;
+    overflow-x: auto;
+    padding: 1rem 0;
+    gap: 2rem;
+  }
+  
+  /* Asegúrate de que las imágenes no se deformen */
+  .galeria .image-card img {
+    width: 200px; /* Ajusta el tamaño según lo necesites */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Efectos hover en las imágenes */
+  .galeria .image-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Opcional: si deseas ocultar la barra de desplazamiento horizontal */
+  .galeria .flex::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Sección con espacio entre las imágenes */
+  .galeria h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  
+  /* Redes sociales */
+  .redes-sociales a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .redes-sociales a:hover {
+    text-decoration: underline;
+  }
+  /* estillos de navegacion*/
+.navbar {
+    background-color: black; 
+    border-bottom: 2px solid #dc3545; 
+  }
+  
+  .navbar .nav-link {
+    color: #37AFE1; 
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s, background-color 0.3s;
+  }
+  
+  .navbar .nav-link:hover {
+    color: black; 
+    background-color:white;
+    border-radius: 5px; 
+  }
+  .dropdown-menu {
+    background-color: #ffffff; 
+    border: 1px solid #dc3545; 
+    border-radius: 5px;
+    padding: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .dropdown-item {
+    color: #343a40; 
+    font-weight: 500;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .dropdown-item:hover {
+    color: black; /* Texto blanco */
+    background-color: #BCCCDC; /* Fondo rojo */
+  }
+  /* Botón de toggler */
+  .navbar-toggler {
+    border: none;
+  }
+  .navbar-nav .nav-link {
+    font-size: 1.25rem; 
+    font-weight: bold; 
+    text-align: center; 
+  }
+  
+  .navbar-nav .dropdown-menu {
+    font-size: 20px; 
+  }
+  
+  .btn-danger {
+    font-size: 20px; 
+    font-weight: bold;
+  }
+  
+  .form-control {
+    font-size: 20px; 
+  }
+  
+  .btn-outline-success {
+    font-size: 20px; 
+    font-weight: bold;
+  }
+  
+  .navbar .navbar-nav, .navbar .form-control, .navbar .btn {
+    align-items: center;
+  }
+  .navbar-nav .nav-item {
+    margin: 0 10px;
+  }
+  .navbar .Logo img {
+    margin-right: 15px;
+  }
+/*footer*/
+footer {
+    background-color: #e60000; 
+    color: white;
+    padding: 30px 20px;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Ajuste para dispositivos pequeños */
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+  }
+
+  .footer-column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  .footer-column a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin: 5px 0;
+    display: block;
+  }
+
+  .footer-column a:hover {
+    text-decoration: underline;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+
+  .social-icons a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    border-radius: 50%;
+    color: #e60000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+
+  .social-icons a:hover {
+    background-color: #ffcccc;
+  }
+
+  .footer-logo {
+    text-align: left;
+    font-size: 0.8rem;
+    margin-top: 20px;
+  }
+
+  .footer-logo img {
+    width: 50px;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    flex: 1;
+    max-width: 18rem; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px; 
+  }
+
+  .card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  /*video*/
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 20px; /* Opcional: agrega un poco de espacio alrededor del iframe */
+
+  }
+  
+  .video {
+    max-width: 400%;
+    height: auto;
+  }
+  .mi-vision {
+    text-align: center;
+    color: white;
+    background-color: #dc3545;
+    font-family: "Space Grotesk", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+   }
+   /*galeria*/
+   .galeria .flex {
+    width: 90%;  /* Ajusta este valor según lo que necesites */
+    margin: 0 auto;
+    text-align: center
+  }
+  
+  
+  

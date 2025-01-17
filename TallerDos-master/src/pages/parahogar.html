@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/TallerDos-master/src/css/hogar.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <title>Helados</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <a class="Logo">
+      <img src="/TallerDos-master/src/assets/Imagenes/Logo.png" alt="Logo Pinguino" width="100" height="100"
+        class="d-inline-block align-text-top">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav me-auto">
+        <!-- Nosotros -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Nosotros.html" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Nosotros
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="Index.html">Inicio</a></li>
+            <li><a class="dropdown-item" href="mision.html">Misión</a></li>
+            <li><a class="dropdown-item" href="vision.html">Visión</a></li>
+          </ul>
+        </li>
+        <!-- Nuestra Marca -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Nuestra Marca
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="Magnum.html">MAGNUM</a></li>
+            <li><a class="dropdown-item" href="cornetto.html">CORNETTO</a></li>
+            <li><a class="dropdown-item" href="Casero.html">CASERO</a></li>
+          </ul>
+        </li>
+        <!-- Helados -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Nuestra Historia
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="Mi Historia.html">HISTORIA PINGUINOS</a></li>
+          </ul>
+        </li>
+        <!-- Inspírame -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Inspírame
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="preguntas.html">PREGUNTAS FRECUENTES</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!-- Sección de Búsqueda -->
+      <form class="d-flex me-3" role="search">
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+      <!-- Botón de Registro -->
+      <a href="registro.html" class="btn btn-danger">Regístrate</a>
+    </div>
+  </nav>
+  <br>
+  <div class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-md-3">
+        <div class="card card-custom">
+          <img src="/TallerDos-master/src/assets/Imagenes/Torta caprichos.avif" class="card-img-top" alt="Imagen 1">
+          <div class="card-body">
+            <h5 id="titulo-caja1" class="card-title">Torta Capricho</h5>
+            <p id="texto-caja1" class="card-text">Torta con helado de leche sabor a vainilla y chocolate con cobertura
+              sabor a chocolate y trozos de maní.</p>
+            <br>
+            <button class="btn btn-custom" onclick="agregarAlCarrito('Torta Capricho', 15)">COMPRA</button>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card card-custom">
+          <img src="/TallerDos-master/src/assets/Imagenes/manicho.avif" class="card-img-top" alt="Imagen 2">
+          <div class="card-body">
+            <h5 id="titulo-caja2" class="card-title">Manicho</h5>
+            <p id="texto-caja2" class="card-text">Delicioso helado de leche sabor a chocolate con trocitos de chocolate
+              y maní.</p>
+            <br>
+            <button class="btn btn-custom" onclick="agregarAlCarrito('Manicho', 15)">COMPRA</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card card-custom">
+          <img src="/TallerDos-master/src/assets/Imagenes/oreoh.avif" class="card-img-top" alt="Imagen 3">
+          <div class="card-body">
+            <h5 id="titulo-caja3" class="card-title">Torta Oreo</h5>
+            <p id="texto-caja3" class="card-text">Delicioso helado de leche sabor a vainilla con trozos de galleta oreo.
+              Una explosión de sabor.</p>
+            <br>
+            <button class="btn btn-custom" onclick="agregarAlCarrito('Torta Oreo', 15)">COMPRA</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card card-custom">
+          <img src="/TallerDos-master/src/assets/Imagenes/sanducheH.avif" class="card-img-top" alt="Imagen 4">
+          <div class="card-body">
+            <h5 id="titulo-caja4" class="card-title">Sanduche</h5>
+            <p id="texto-caja4" class="card-text">Delicioso helado de leche sabor a vainilla con trozos de galleta
+              sanduche. Una explosión de sabor.
+            </p>
+            <br>
+            <button class="btn btn-custom" onclick="agregarAlCarrito('Sanduche', 15)">COMPRA</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <hr>
+  <div class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-md-3">
+        <div class="card card-custom">
+          <img src="/TallerDos-master/src/assets/Imagenes/Torta Festival.avif" class="card-img-top" alt="Imagen 1">
+          <div class="card-body">
+            <h5 id="titulo-caja1" class="card-title">Torta Festival</h5>
+            <p id="texto-caja1" class="card-text"> orta con helado de leche sabor a frutilla y vainilla con cobertura
+              sabor a chocolate y trozos.</p>
+            <br>
+            <button class="btn btn-custom" onclick="agregarAlCarrito('Torta festival', 15)">COMPRA</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card card-custom">
+          <img src="/TallerDos-master/src/assets/Imagenes/napolitano.avif" class="card-img-top" alt="Imagen 2">
+          <div class="card-body">
+            <h5 id="titulo-caja2" class="card-title">Clasico Napolitano</h5>
+            <p id="texto-caja2" class="card-text">Perfecta Combinación de helado sabor a Vainilla, Frutilla y Chocolate.
+              Con 70% de leche, adicionado con calcio.</p>
+            <br>
+            <button class="btn btn-custom" onclick="agregarAlCarrito('napolitano', 15)">COMPRA</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card card-custom">
+          <img src="/TallerDos-master/src/assets/Imagenes/tres leches.avif" class="card-img-top" alt="Imagen 3">
+          <div class="card-body">
+            <h5 id="titulo-caja3" class="card-title">Tres leches</h5>
+            <p id="texto-caja3" class="card-text">Delicioso helado de leche sabor a Tres Leches con trozitos de galleta
+              de Vainilla.</p>
+            <br>
+            <button class="btn btn-custom" onclick="agregarAlCarrito('tres leches', 15)">COMPRA</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card card-custom">
+          <img src="/TallerDos-master/src/assets/Imagenes/Ron Pasas.avif" class="card-img-top" alt="Imagen 4">
+          <div class="card-body">
+            <h5 id="titulo-caja4" class="card-title">Ron pasas</h5>
+            <p id="texto-caja4" class="card-text">Helado sabor a Ron Pasas. Con 70% de leche y adicionado con calcio.
+            </p>
+            <br>
+            <button class="btn btn-custom" onclick="agregarAlCarrito('Ron pasas', 15)">COMPRA</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Carrito flotante -->
+  <a href="carrito.html" class="carrito-flotante" title="Carrito de Compras">
+    <img src="/TallerDos-master/src/assets/Imagenes/anadir-al-carrito.png" alt="Carrito de compras">
+
+  </a>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Ayuda</h3>
+        <a href="Lugares.html">Ubicaciones</a>
+        <a href="Contactos.html">Contáctanos</a>
+      </div>
+      <div class="footer-column">
+        <h3>Síguenos!</h3>
+        <a href="https://www.facebook.com/pinguinoecuador" title="Facebook">F</a>
+        <a href="https://www.youtube.com/@compartefelicidad" title="YouTube">Y</a>
+        <a href="https://www.instagram.com/pinguino_ec/" title="Instagram">I</a>
+      </div>
+      <div class="footer-column">
+        <h3>Ubicación</h3>
+        <p>Ecuador | <a href="#" style="color: white; text-decoration: underline;">Cambia de ubicación</a></p>
+      </div>
+    </div>
+    <div class="footer-logo">
+      <img src="/TallerDos-master/src/assets/Imagenes/unilever.avif" alt="Unilever Logo">© 2025 Unilever
+    </div>
+  </footer>
+  <script src="/TallerDos-master/src/js/carrito.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

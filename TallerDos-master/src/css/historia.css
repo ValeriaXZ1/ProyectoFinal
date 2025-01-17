@@ -1,0 +1,285 @@
+body {
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    background: url(https://st2.depositphotos.com/1813957/6716/i/450/depositphotos_67168205-stock-illustration-beautiful-colorful-pastel-background-texture.jpg);
+    background-size: cover;
+}
+
+.story-container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: red;
+}
+
+.story-section {
+    margin-bottom: 30px;
+}
+
+.story-text {
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 10px;
+    color: #34495e;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}/* Estilo general para reducir la barra */
+.navbar {
+    background-color: black; 
+    border-bottom: 2px solid #dc3545; 
+    padding: 5px 10px; /* Reduce el padding general */
+}
+
+.navbar .nav-link {
+    color: black; 
+    font-size: 16px; /* Tamaño de fuente más pequeño */
+    font-weight: bold;
+    padding: 5px 10px; /* Reduce el espacio entre enlaces */
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar .nav-link:hover {
+    color: black; 
+    background-color: white;
+    border-radius: 5px; 
+}
+
+.navbar .Logo img {
+    height: 30px; /* Reduce el tamaño del logo */
+    margin-right: 10px;
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 5px 10px; /* Reduce el tamaño del botón */
+}
+
+.navbar-nav .nav-item {
+    margin: 0 5px; /* Reduce el espacio entre elementos */
+}
+
+.navbar-nav .dropdown-menu {
+    font-size: 16px; /* Ajusta el tamaño del menú desplegable */
+    padding: 5px 10px;
+    border-radius: 3px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.dropdown-item {
+    color: #343a40; 
+    font-weight: 500;
+    padding: 5px 15px; /* Reduce el padding de los elementos del dropdown */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-item:hover {
+    color: black; 
+    background-color: #BCCCDC; 
+}
+
+.btn-danger {
+    font-size: 16px; 
+    font-weight: bold;
+    padding: 5px 10px; /* Reduce el padding del botón */
+}
+
+.form-control {
+    font-size: 16px; 
+    padding: 5px 10px; /* Reduce el padding del campo de formulario */
+}
+
+.btn-outline-success {
+    font-size: 16px; 
+    font-weight: bold;
+    padding: 5px 10px; /* Reduce el padding del botón */
+}
+
+.navbar-nav .nav-link {
+    font-size: 16px; 
+    font-weight: bold; 
+    text-align: center; 
+}
+
+.navbar-nav .dropdown-menu {
+    font-size: 16px; 
+}
+/*footer*/
+footer {
+    background-color: #e60000;
+    color: white;
+    padding: 30px 20px;
+    text-align: center; /* Centra el contenido en pantallas pequeñas */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinea las columnas arriba */
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px; /* Espacio entre columnas */
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px; /* Ajusta el tamaño mínimo de cada columna */
+    margin: 10px;
+    text-align: left;
+}
+
+.footer-column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.footer-column a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin: 5px 0;
+    display: block;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    border-radius: 50%;
+    color: #e60000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #ffcccc;
+}
+
+.footer-logo {
+    text-align: left;
+    font-size: 0.8rem;
+    margin-top: 20px;
+}
+
+.footer-logo img {
+    width: 50px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* Estilo para las tarjetas */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten en filas */
+}
+
+.card {
+    flex: 1 1 calc(25% - 20px); /* Ocupa el 25% del ancho con espacio de 20px */
+    max-width: 18rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden; /* Evita que el contenido se desborde */
+    background-color: white; /* Fondo blanco */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Aumenta el tamaño al pasar el mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+    width: 100%; /* Ajusta la imagen al ancho de la tarjeta */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-content {
+    padding: 15px;
+    text-align: left;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+/*boton flotante*/
+/* Estilo para el botón flotante */
+.back-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #e60000;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-to-top-btn:hover {
+    background-color: #ff6666; /* Color al pasar el ratón */
+    transform: scale(1.1); /* Efecto de zoom */
+}
+
+/* Para que se vea bien en dispositivos móviles */
+@media (max-width: 768px) {
+    .back-to-top-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+}
+
+

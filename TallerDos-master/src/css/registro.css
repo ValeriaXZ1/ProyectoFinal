@@ -1,0 +1,71 @@
+body {
+    display: flex; /* Activar flexbox */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 100vh;
+    margin: 0;
+    background: url(https://img.freepik.com/vector-premium/pinguino-fisuras-fondo_42349-703.jpg);
+    background-size: cover;
+    border-radius: 30px;
+}
+
+form {
+    background: linear-gradient(to right, #D4F6FF, white, #EB4747);;
+    border: 1px solid blue;
+    border-radius: 8px;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+p {
+    text-align: center;
+    color: #0D0CB5;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input, select, textarea, button {
+    width: 100%;
+    margin-top: 5px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background: linear-gradient(to right, #3AB0FF, white,);
+    color: black;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: linear-gradient(to right, #3AB0FF, red);
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-to-top img {
+    width: 30px;
+    cursor: pointer;
+}
